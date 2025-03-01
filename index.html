@@ -7,17 +7,35 @@
     <title>Portafolio - Jacob G</title>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="" alt="logo" />
-      </div>
-      <nav>
-        <ul>
-          <li>About Me</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Contact</li>
+    <header
+      class="w-full flex justify-center bg-[var(--color-bg-dark)] text-[var(--color-text-light)]"
+    >
+      <nav class="w-full py-3 px-4 flex justify-between items-center max-w-7xl">
+        <div class="w-8 border-2 p-1 flex">
+          <img src="./src/images/logo.png" alt="logo" />
+        </div>
+        <ul class="gap-12 hidden md:flex">
+          <li>
+            <a href="#"> About Me </a>
+          </li>
+          <li>
+            <a href="#"> Skills </a>
+          </li>
+          <li>
+            <a href="#"> Projects </a>
+          </li>
         </ul>
+        <a
+          href="#"
+          class="max-w-max px-2 py-1 flex gap-2 rounded-xl border-1 border-[var(--color-soft-gray)]"
+        >
+          Contact
+          <img
+            src="./src/icons/arrow-right.svg"
+            alt="arrow right"
+            class="w-6 p-1 bg-[var(--color-highlight)] rounded-full"
+          />
+        </a>
       </nav>
     </header>
 
