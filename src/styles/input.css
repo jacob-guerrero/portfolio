@@ -17,3 +17,10 @@
     rgb(42, 66, 114) 90%
   );
 }
+
+.bg_pic {
+  filter: drop-shadow(-4px -4px 120px rgb(194, 194, 41));
+}
+.bg_pic_peq {
+  filter: drop-shadow(0px 5px 80px rgb(194, 194, 41));
+}

@@ -42,27 +42,45 @@
     <main>
       <section
         id="hero"
-        class="w-full h-lvh p-2 relative flex flex-col items-center justify-between bg-[linear-gradient(180deg,_rgb(0,4,20)_0%,_rgb(42,66,114)_90%)]"
+        class="w-full h-lvh p-2 relative z-0 flex flex-col items-center justify-between bg-[linear-gradient(180deg,_rgb(0,4,20)_0%,_rgb(42,66,114)_90%)]"
       >
+        <img
+          src="./src/images/foto-comp.png"
+          alt="foto jacob"
+          class="hidden bg_pic absolute -z-10 bottom-0 w-4/5 max-w-md md:block md:max-w-sm xl:max-w-md"
+        />
+
         <div
-          class="h-1/2 text-3xl text-text-light flex flex-col justify-center gap-4 md:text-5xl"
+          class="h-1/2 pt-14 text-3xl text-text-light flex flex-col justify-center gap-4 md:text-5xl"
         >
-          <h2 class="">
-            I'm
-            <span class="h-max text-highlight inline-block"
-              ><em>Jacob Guerrero</em></span
-            >
-          </h2>
-          <p>
-            <span
-              class="h-max px-2 py-1 border-1 border-soft-gray rounded-xl inline-block"
-              >Full Stack</span
-            >
-            Developer
-          </p>
+          <div class="h-1/2 flex flex-col justify-center gap-4">
+            <h2 class="">
+              I'm
+              <span class="h-max text-highlight inline-block"
+                ><em>Jacob Guerrero</em></span
+              >
+            </h2>
+            <p>
+              <span
+                class="h-max px-2 py-1 border-1 border-soft-gray rounded-xl inline-block"
+                >Full Stack</span
+              >
+              Developer
+            </p>
+          </div>
+
+          <div
+            class="w-20 h-20 rounded-full bg-highlight self-center flex justify-center items-center md:hidden bg_pic_peq"
+          >
+            <img
+              src="./src/images/foto-peq.png"
+              alt="foto jacob"
+              class="w-19 border-2 border-highlight m-2 rounded-full md:hidden"
+            />
+          </div>
         </div>
         <div
-          class="w-full h-1/2 max-w-7xl flex flex-col justify-between items-center"
+          class="w-full h-1/2 max-w-7xl flex flex-col justify-around items-center"
         >
           <div
             class="w-9/10 px-4 py-2 rounded-xl text-text-light bg-dark-blue-alpha md:max-w-sm md:p-6"
@@ -118,7 +136,7 @@
             href="#"
             class="mb-6 px-4 py-2 text-xl bg-highlight border-2 border-dark-blue rounded-2xl md:px-6 md:py-4"
           >
-            MY PROJECTS
+            My Projects
           </a>
         </div>
       </section>
