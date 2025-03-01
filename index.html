@@ -8,7 +8,7 @@
   </head>
   <body>
     <header
-      class="w-full fixed z-10 flex justify-center text-text-light bg-nav-blue"
+      class="w-full fixed z-10 flex justify-center text-text-light bg-nav-blue backdrop-blur-md"
     >
       <nav class="w-full py-3 px-4 flex justify-between items-center max-w-7xl">
         <div class="border-2">
@@ -141,22 +141,31 @@
         </div>
       </section>
 
-      <section id="about">
-        <h2>WHO AM I?</h2>
-        <div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam,
-            placeat!
+      <section
+        id="about"
+        class="w-full px-2 py-8 relative z-10 text-center flex flex-col gap-6 items-center bg-dark-blue"
+      >
+        <h2 class="text-3xl text-highlight">WHO AM I?</h2>
+        <div class="flex flex-col gap-3 text-text-light">
+          <p class="max-w-md">
+            Hey, I'm Jacob, a Full-Stack Developer with 1+ years of experience
+            crafting modern, scalable web applications. I thrive on turning
+            complex problems into elegant solutions.
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
-            deserunt!
+          <p class="max-w-md">
+            I specialize in HTML, CSS, JavaScript, React, Node.js, Express, and
+            database management (SQL, PostgreSQL).
           </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, cum.
+          <p class="max-w-md">
+            Additionally, when I'm not coding, you'll find me exploring new tech
+            trends, playing videogames, or dancing.
           </p>
         </div>
-        <button>SHOW MY PROJECTS</button>
+        <a
+          href="#"
+          class="max-w-max mb-6 px-4 py-2 text-xl bg-highlight border-2 border-dark-blue rounded-2xl md:px-6 md:py-4"
+          >Show My Projects</a
+        >
       </section>
 
       <section id="skills">
