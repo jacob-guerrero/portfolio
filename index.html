@@ -51,9 +51,9 @@
         />
 
         <div
-          class="h-1/2 pt-14 text-3xl text-text-light flex flex-col justify-center gap-4 py-6 md:text-5xl"
+          class="h-1/2 pt-14 text-3xl text-text-light flex flex-col justify-center gap-5 md:text-5xl"
         >
-          <div class="h-1/2 flex flex-col justify-center gap-4">
+          <div class="h-1/2 flex flex-col justify-center gap-4 text-center">
             <h2 class="">
               I'm
               <span class="h-max text-highlight inline-block"
@@ -143,7 +143,7 @@
 
       <section
         id="about"
-        class="w-full px-2 py-8 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
+        class="w-full px-2 pt-16 pb-8 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
       >
         <h2 class="text-3xl text-highlight">WHO AM I?</h2>
         <div class="flex flex-col gap-3 text-text-light">
@@ -326,9 +326,19 @@
                 class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
               >
                 <img
+                  src="./src/icons/dbeaver.png"
+                  alt="dbeaver icon"
+                  class="w-25 h-25"
+                />
+                <p class="text-xl">Dbeaver</p>
+              </li>
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col justify-center items-center px-4 pt-2 pb-6"
+              >
+                <img
                   src="./src/icons/django.svg"
                   alt="django icon"
-                  class="w-30 h-25"
+                  class="w-30 h-20"
                 />
                 <p class="text-xl">Django</p>
               </li>
@@ -390,6 +400,24 @@
       </section>
     </main>
 
-    <footer>&copy; 2025 Jacob Guerrero</footer>
+    <footer
+      class="w-full px-2 py-6 relative z-10 bg-dark-blue flex justify-center items-center text-text-light gap-2"
+    >
+      <p class="inline-block">&copy; 2025 Jacob Guerrero</p>
+      <a
+        href="https://github.com/jacob-guerrero/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex"
+      >
+        <picture class="inline-block">
+          <img
+            src="./src/icons/github-white.png"
+            alt="GitHub link"
+            class="w-5"
+          />
+        </picture>
+      </a>
+    </footer>
   </body>
 </html>
