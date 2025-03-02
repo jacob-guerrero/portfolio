@@ -51,7 +51,7 @@
         />
 
         <div
-          class="h-1/2 pt-14 text-3xl text-text-light flex flex-col justify-center gap-4 md:text-5xl"
+          class="h-1/2 pt-14 text-3xl text-text-light flex flex-col justify-center gap-4 py-6 md:text-5xl"
         >
           <div class="h-1/2 flex flex-col justify-center gap-4">
             <h2 class="">
@@ -143,7 +143,7 @@
 
       <section
         id="about"
-        class="w-full px-2 py-8 relative z-10 text-center flex flex-col gap-6 items-center bg-dark-blue"
+        class="w-full px-2 py-8 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
       >
         <h2 class="text-3xl text-highlight">WHO AM I?</h2>
         <div class="flex flex-col gap-3 text-text-light">
@@ -168,27 +168,105 @@
         >
       </section>
 
-      <section id="skills">
-        <h2>My Skills</h2>
-        <article class="">
-          <div>
-            <ul>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-            </ul>
-            <div>
-              <p>1</p>
-              <p>Year experience working</p>
-              <button>Download my cv</button>
+      <section
+        id="skills"
+        class="w-full px-2 py-8 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
+      >
+        <h2 class="text-3xl text-highlight">MY SKILLS</h2>
+        <div class="w-full">
+          <div
+            class="w-full text-text-light grid grid-cols-[1,minmax(max-content,384px)] justify-center gap-4"
+          >
+            <div
+              class="w-full bg-deep-blue rounded-lg flex flex-col items-center p-4 gap-4"
+            >
+              <p class="text-5xl">1+</p>
+              <p class="text-2xl">Years experience working</p>
+              <a
+                href="#"
+                class="max-w-max px-3 py-1.5 text-xl bg-highlight border-2 border-dark-blue rounded-2xl md:px-6 md:py-4 text-black"
+                download
+                >Download my cv</a
+              >
             </div>
+
+            <ul class="w-full grid gap-2">
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
+              >
+                <img src="./src/icons/html.png" alt="html icon" class="w-25" />
+                <p class="text-xl">HTML5</p>
+              </li>
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
+              >
+                <img src="./src/icons/css.png" alt="css icon" class="w-25" />
+                <p class="text-xl">CSS3</p>
+              </li>
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
+              >
+                <img
+                  src="./src/icons/js.png"
+                  alt="JavaScript icon"
+                  class="w-25"
+                />
+                <p class="text-xl">JavaScript</p>
+              </li>
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
+              >
+                <img
+                  src="./src/icons/react.svg"
+                  alt="react icon"
+                  class="w-25 h-25"
+                />
+                <p class="text-xl">React</p>
+              </li>
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
+              >
+                <img
+                  src="./src/icons/nodejs.svg"
+                  alt="nodejs icon"
+                  class="w-25 h-25"
+                />
+                <p class="text-xl">NodeJS</p>
+              </li>
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
+              >
+                <img
+                  src="./src/icons/express.png"
+                  alt="express icon"
+                  class="w-25 h-20 bg-white px-2"
+                />
+                <p class="text-xl">ExpressJS</p>
+              </li>
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
+              >
+                <img
+                  src="./src/icons/python.png"
+                  alt="python icon"
+                  class="w-25 h-25"
+                />
+                <p class="text-xl">Python</p>
+              </li>
+              <li
+                class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
+              >
+                <img
+                  src="./src/icons/postgresql.png"
+                  alt="postgresql icon"
+                  class="w-25 h-25"
+                />
+                <p class="text-xl">PostgreSQL</p>
+              </li>
+            </ul>
           </div>
-          <div>
+
+          <div class="">
             <h3>Additional Skills</h3>
             <ul>
               <li>item</li>
@@ -197,7 +275,7 @@
               <li>item</li>
             </ul>
           </div>
-        </article>
+        </div>
       </section>
 
       <section id="projects"></section>
