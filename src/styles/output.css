@@ -292,6 +292,12 @@
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -325,6 +331,9 @@
   .w-9\/10 {
     width: calc(9/10 * 100%);
   }
+  .w-15 {
+    width: calc(var(--spacing) * 15);
+  }
   .w-19 {
     width: calc(var(--spacing) * 19);
   }
@@ -345,6 +354,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .w-max {
+    width: max-content;
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
@@ -370,8 +382,41 @@
   .resize-none {
     resize: none;
   }
+  .columns-2 {
+    columns: 2;
+  }
+  .auto-cols-max {
+    grid-auto-columns: max-content;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .grid-cols-\[1\,minmax\(max-content\,384px\)\] {
     grid-template-columns: 1,minmax(max-content,384px);
+  }
+  .grid-cols-\[repeat\(auto-fit\,_minmax\(100px\,_1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .grid-cols-\[repeat\(auto-fit\,_minmax\(130px\,_1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+  .grid-cols-\[repeat\(auto-fit\,_minmax\(135px\,_1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  }
+  .grid-cols-\[repeat\(auto-fit\,_minmax\(140px\,_1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .grid-cols-\[repeat\(auto-fit\,_minmax\(150\,_1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit, minmax(150, 1fr));
+  }
+  .grid-cols-\[repeat\(auto-fit\,_minmax\(max-content\,_1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 1fr));
+  }
+  .grid-cols-\[repeat\(auto-fit\,_minmax\(max_content\,_1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit, minmax(max content, 1fr));
+  }
+  .grid-cols-\[repeat\(auto-fit\,_minmax\(min-content\,_1fr\)\)\] {
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -387,6 +432,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-items-stretch {
+    justify-items: stretch;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -414,6 +462,9 @@
   }
   .self-center {
     align-self: center;
+  }
+  .justify-self-center {
+    justify-self: center;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
