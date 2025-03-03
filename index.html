@@ -16,17 +16,17 @@
         </div>
         <ul class="gap-12 hidden md:flex">
           <li>
-            <a href="#"> About Me </a>
+            <a href="#about"> About Me </a>
           </li>
           <li>
-            <a href="#"> Skills </a>
+            <a href="#skills"> Skills </a>
           </li>
           <li>
-            <a href="#"> Projects </a>
+            <a href="#projects"> Projects </a>
           </li>
         </ul>
         <a
-          href="#"
+          href="#contact"
           class="max-w-max px-2 py-1 flex gap-2 rounded-xl border-1 border-soft-gray"
         >
           Contact
@@ -135,7 +135,7 @@
             </div>
           </div>
           <a
-            href="#"
+            href="#projects"
             class="mb-6 px-4 py-2 text-xl bg-highlight border-2 border-dark-blue rounded-2xl md:px-6 md:py-4"
           >
             My Projects
@@ -145,10 +145,10 @@
 
       <section
         id="about"
-        class="w-full px-2 pt-16 pb-8 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
+        class="w-full px-2 pt-16 pb-6 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
       >
         <h2 class="text-3xl text-highlight">WHO AM I?</h2>
-        <div class="flex flex-col gap-3 text-text-light">
+        <div class="flex flex-col gap-3 text-text-light md:text-xl">
           <p class="max-w-md">
             Hey, I'm Jacob, a Full-Stack Developer with 1+ years of experience
             crafting modern, scalable web applications. I thrive on turning
@@ -164,15 +164,15 @@
           </p>
         </div>
         <a
-          href="#"
-          class="max-w-max mb-6 px-4 py-2 text-xl bg-highlight border-2 border-dark-blue rounded-2xl md:px-6 md:py-4"
+          href="#projects"
+          class="max-w-max px-4 py-2 text-xl bg-highlight border-2 border-dark-blue rounded-2xl md:px-6 md:py-4"
           >Show My Projects</a
         >
       </section>
 
       <section
         id="skills"
-        class="w-full px-2 py-8 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
+        class="w-full px-2 pt-16 pb-6 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
       >
         <h2 class="text-3xl text-highlight">MY SKILLS</h2>
 
@@ -186,7 +186,7 @@
               <p class="text-5xl">1+</p>
               <p class="text-2xl">Years experience working</p>
               <a
-                href="#"
+                href="./src/images/Jacob-Guerrero-Software-Developer-CV.pdf"
                 class="max-w-max px-3 py-1.5 text-xl bg-highlight border-2 border-dark-blue rounded-2xl md:px-6 md:py-4 text-black"
                 download
                 >Download my cv</a
@@ -361,18 +361,26 @@
         </div>
       </section>
 
-      <section id="projects"></section>
+      <section
+        id="projects"
+        class="w-full px-2 pt-16 pb-6 relative z-10 flex flex-col items-center gap-6 text-center bg-dark-blue"
+      ></section>
 
       <section
         id="contact"
-        class="w-full px-2 py-8 relative z-10 bg-dark-blue flex justify-center"
+        class="w-full px-2 pt-16 pb-6 relative z-10 bg-dark-blue flex justify-center"
       >
         <div
           class="w-full max-w-2xl px-4 py-6 flex flex-col items-center bg-amber-50 rounded-2xl gap-6"
         >
           <h2 class="text-3xl text-black text-center">Let's have a chat</h2>
 
-          <form action="" class="w-full flex flex-col items-center gap-4">
+          <form
+            action="mailto:user@example.com"
+            method="POST"
+            enctype="text/plain"
+            class="w-full flex flex-col items-center gap-4"
+          >
             <div class="w-full">
               <label for="name" class="text-xl">Name:</label>
               <input
@@ -408,7 +416,7 @@
 
             <button
               type="submit"
-              class="max-w-max px-3 py-1.5 text-xl bg-highlight border-1 border-dark-blue rounded-2xl md:px-6 md:py-4 text-black"
+              class="max-w-max px-3 py-1.5 text-xl bg-highlight border-1 border-dark-blue rounded-2xl md:px-6 md:py-4 text-black hover:cursor-pointer"
             >
               Submit
             </button>
