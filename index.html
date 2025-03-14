@@ -9,6 +9,7 @@
       href="./src/images/logo.png"
       type="image/x-icon"
     />
+    <script src="./src/scripts/skills.js" defer></script>
     <title>Portafolio - Jacob G</title>
   </head>
   <body>
@@ -199,8 +200,10 @@
             </div>
 
             <ul
+              id="skills_container"
               class="w-full grid grid-cols-subgrid gap-2 md:col-span-3 md:row-span-3 md:col-start-1 md:row-start-1 lg:col-span-4"
             >
+              <!-- 
               <li
                 class="w-full bg-deep-blue rounded-lg flex flex-col gap-3 justify-center items-center px-4 py-6"
               >
@@ -257,7 +260,7 @@
                 <img
                   src="./src/icons/express.png"
                   alt="express icon"
-                  class="w-15 h-10 bg-white px-2"
+                  class="w-15 h-10 bg-white px-2 my-2.5"
                 />
                 <p class="text-xl">ExpressJS</p>
               </li>
@@ -281,6 +284,7 @@
                 />
                 <p class="text-xl">PostgreSQL</p>
               </li>
+              -->
             </ul>
           </div>
 
@@ -289,6 +293,7 @@
           >
             <h3 class="text-3xl text-highlight">Additional Skills</h3>
             <ul
+              id="additional_skills_container"
               class="w-full text-text-light grid grid-cols-[repeat(auto-fit,_minmax(130px,_1fr))]"
             >
               <li
@@ -352,7 +357,7 @@
                 <p class="text-xl">Dbeaver</p>
               </li>
               <li
-                class="w-max bg-deep-blue rounded-lg justify-self-center flex flex-col justify-center items-center px-4 pt-2 pb-6 md:gap-3 md:py-6"
+                class="w-max bg-deep-blue rounded-lg justify-self-center flex flex-col gap-3 justify-center items-center px-4 py-6"
               >
                 <img
                   src="./src/icons/django.svg"
