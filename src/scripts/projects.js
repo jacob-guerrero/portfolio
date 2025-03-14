@@ -2,8 +2,8 @@ const projects = [
   {
     title: "Plantory",
     description:
-      "A simple app to manage plant nursery inventory, track stock, and organize plants",
-    projectImgSrc: "./src/images/plantory-screen.jpg",
+      "A simple app to manage plant nursery inventory, track stock, and organize plants.",
+    projectImgSrc: "../images/plantory-screen.jpg",
     altImgSrc: "plantory app screenshot",
     linkSrc: "https://inventory-app-jg.up.railway.app/",
     githubSrc: "https://github.com/jacob-guerrero/odin-inventory-app",
@@ -13,7 +13,7 @@ const projects = [
     title: "Shopping Cart",
     description:
       "A React-based shopping cart application that allows users to browse products, add items to their cart, and manage quantities.",
-    projectImgSrc: "./src/images/shopping-screen.jpg",
+    projectImgSrc: "../images/shopping-screen.jpg",
     altImgSrc: "shopping cart app screenshot",
     linkSrc: "https://shopping-cart-jg.netlify.app/",
     githubSrc: "https://github.com/jacob-guerrero/odin-shopping-cart",
@@ -23,7 +23,7 @@ const projects = [
     title: "The Purrfect Memory",
     description:
       "The Purrfect Memory is a React-based memory game where players click unique cat images without repeating selections.",
-    projectImgSrc: "./src/images/memory-screen.jpg",
+    projectImgSrc: "../images/memory-screen.jpg",
     altImgSrc: "Memory card app screenshot",
     linkSrc: "https://memory-card-jg.netlify.app/",
     githubSrc: "https://github.com/jacob-guerrero/odin-memorycard",
@@ -33,10 +33,30 @@ const projects = [
     title: "Weather App",
     description:
       "A simple and interactive weather forecast application that fetches real-time weather data using the Weather API.",
-    projectImgSrc: "./src/images/weather-screen.jpg",
+    projectImgSrc: "../images/weather-screen.jpg",
     altImgSrc: "Weather app screenshot",
     linkSrc: "https://jacob-guerrero.github.io/odin-weather-app/",
     githubSrc: "https://github.com/jacob-guerrero/odin-weather-app",
+    altExternalLinks: "External link",
+  },
+  {
+    title: "Battleship Game",
+    description:
+      "This project is a Battleship game where the development process is guided by Test-Driven Development.",
+    projectImgSrc: "../images/battleship-screen.jpg",
+    altImgSrc: "Battleship app screenshot",
+    linkSrc: "https://jacob-guerrero.github.io/odin-battleship/",
+    githubSrc: "https://github.com/jacob-guerrero/odin-battleship",
+    altExternalLinks: "External link",
+  },
+  {
+    title: "Tic Tac Toe",
+    description:
+      "A simple Tic Tac Toe game built with JavaScript, HTML, and CSS, following the module pattern and factory functions.",
+    projectImgSrc: "../images/tictactoe-screen.jpg",
+    altImgSrc: "Tic Tac Toe app screenshot",
+    linkSrc: "https://jacob-guerrero.github.io/odin-tic-tac-toe/",
+    githubSrc: "https://github.com/jacob-guerrero/odin-tic-tac-toe",
     altExternalLinks: "External link",
   },
 ];
@@ -61,7 +81,7 @@ function createProjects(arr, parent) {
     imgProject.src = `${project.projectImgSrc}`;
     imgProject.alt = `${project.altImgSrc}`;
     imgProject.className =
-      "aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:brightness-120 xl:aspect-7/8";
+      "aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:brightness-120";
 
     /* div text content */
     divInfoContent.className = "flex flex-col gap-1 pt-4";
@@ -76,12 +96,12 @@ function createProjects(arr, parent) {
 
     aExternal.href = `${project.linkSrc}`;
     aExternal.className = "w-6 hover:cursor-pointer";
-    imgExternal.src = "./src/icons/link.svg";
+    imgExternal.src = "../icons/link.svg";
     imgExternal.alt = "external link";
 
     aGithub.href = `${project.githubSrc}`;
     aGithub.className = "w-6 hover:cursor-pointer";
-    imgGithub.src = "./src/icons/github-white.png";
+    imgGithub.src = "../icons/github-white.png";
     imgGithub.alt = "external link";
 
     /* Append elements */
@@ -95,8 +115,6 @@ function createProjects(arr, parent) {
     );
     liContainer.append(imgProject, divInfoContent);
 
-    console.log(liContainer);
-    console.log(parent);
     parent.appendChild(liContainer);
   });
 }
