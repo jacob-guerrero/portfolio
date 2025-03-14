@@ -107,5 +107,36 @@ function createSkills(arr, parent) {
   });
 }
 
+function createAdditionalSkills(arr, parent) {
+  arr.forEach((skill) => {
+    const liContainer = document.createElement("li");
+    const imgSkill = document.createElement("img");
+    const pSkill = document.createElement("p");
+
+    /* li container */
+    liContainer.className =
+      "w-max bg-deep-blue rounded-lg justify-self-center flex flex-col gap-3 justify-center items-center px-4 py-6";
+
+    /* img skill */
+    imgSkill.src = `${skill.src}`;
+    imgSkill.alt = `${skill.alt}`;
+    imgSkill.className = !skill.imgClass ? "w-15 h-15" : `${skill.imgClass}`;
+
+    /* div text content */
+    pSkill.textContent = `${skill.title}`;
+    pSkill.className = "text-xl";
+
+    /* Append elements */
+    liContainer.append(imgSkill, pSkill);
+
+    parent.appendChild(liContainer);
+  });
+}
+
 const skillsContainer = document.getElementById("skills_container");
 createSkills(skills, skillsContainer);
+
+const additionalSkillsContainer = document.getElementById(
+  "additional_skills_container"
+);
+createAdditionalSkills(additionalSkills, additionalSkillsContainer);
