@@ -40,3 +40,66 @@ const projects = [
     altExternalLinks: "External link",
   },
 ];
+
+function createProjects(arr, parent) {
+  arr.forEach((project) => {
+    const liContainer = document.createElement("li");
+    const imgProject = document.createElement("img");
+    const divInfoContent = document.createElement("div");
+    const h3TitleProject = document.createElement("h3");
+    const pDescriptionProject = document.createElement("p");
+    const divLinksContainer = document.createElement("div");
+    const aGithub = document.createElement("a");
+    const imgGithub = document.createElement("img");
+    const aExternal = document.createElement("a");
+    const imgExternal = document.createElement("img");
+
+    /* li container */
+    liContainer.className = "group p-4 rounded-lg bg-deep-blue text-text-light";
+
+    /* img project */
+    imgProject.src = `${project.projectImgSrc}`;
+    imgProject.alt = `${project.altImgSrc}`;
+    imgProject.className =
+      "aspect-square w-full rounded-lg bg-gray-200 object-cover group-hover:brightness-120 xl:aspect-7/8";
+
+    /* div text content */
+    divInfoContent.className = "flex flex-col gap-1 pt-4";
+
+    h3TitleProject.className = "text-xl";
+    h3TitleProject.textContent = `${project.title}`;
+    pDescriptionProject.textContent = `${project.description}`;
+
+    /* div links container */
+    divLinksContainer.className =
+      "pt-2 text-lg font-medium flex justify-center gap-3";
+
+    aExternal.href = `${project.linkSrc}`;
+    aExternal.className = "w-6 hover:cursor-pointer";
+    imgExternal.src = "./src/icons/link.svg";
+    imgExternal.alt = "external link";
+
+    aGithub.href = `${project.githubSrc}`;
+    aGithub.className = "w-6 hover:cursor-pointer";
+    imgGithub.src = "./src/icons/github-white.png";
+    imgGithub.alt = "external link";
+
+    /* Append elements */
+    aExternal.appendChild(imgExternal);
+    aGithub.appendChild(imgGithub);
+    divLinksContainer.append(aExternal, aGithub);
+    divInfoContent.append(
+      h3TitleProject,
+      pDescriptionProject,
+      divLinksContainer
+    );
+    liContainer.append(imgProject, divInfoContent);
+
+    console.log(liContainer);
+    console.log(parent);
+    parent.appendChild(liContainer);
+  });
+}
+
+const projectContainer = document.getElementById("projects_container");
+createProjects(projects, projectContainer);
