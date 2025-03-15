@@ -10,6 +10,7 @@
       type="image/x-icon"
     />
     <script src="./src/scripts/skills.js" defer></script>
+    <script src="./src/scripts/menuToggle.js" defer></script>
     <title>Portafolio - Jacob G</title>
   </head>
   <body>
@@ -20,20 +21,40 @@
         <div class="border-2">
           <img src="./src/images/logo.png" alt="logo" class="w-6 m-1 p-0.5" />
         </div>
-        <ul class="gap-12 hidden md:flex">
+
+        <!-- Hamburger Button (on mobile) -->
+        <button
+          id="menu-btn"
+          class="sm:hidden p-1 rounded-lg border-1 border-soft-gray cursor-pointer"
+        >
+          <img src="./src/icons/menu.svg" alt="menu icon" class="w-6" />
+        </button>
+
+        <ul
+          id="menu"
+          class="absolute top-14 -right-1/2 w-1/2 h-screen bg-nav-blue p-4 flex-col items-center sm:w-max sm:h-max sm:static sm:bg-transparent sm:flex-row sm:flex sm:p-0 sm:gap-12 duration-300 ease-in-out"
+        >
           <li>
-            <a href="#about"> About Me </a>
+            <a href="#about" class="block py-2 sm:py-0 text-center">About Me</a>
           </li>
           <li>
-            <a href="#skills"> Skills </a>
+            <a href="#skills" class="block py-2 sm:py-0 text-center">Skills</a>
           </li>
           <li>
-            <a href="#projects"> Projects </a>
+            <a href="#projects" class="block py-2 sm:py-0 text-center"
+              >Projects</a
+            >
+          </li>
+          <li class="sm:hidden">
+            <a href="#contact" class="block py-2 sm:py-0 text-center"
+              >Contact</a
+            >
           </li>
         </ul>
+
         <a
           href="#contact"
-          class="max-w-max px-2 py-1 flex gap-2 rounded-xl border-1 border-soft-gray"
+          class="hidden max-w-max px-2 py-1 sm:flex gap-2 rounded-xl border-1 border-soft-gray"
         >
           Contact
           <img
