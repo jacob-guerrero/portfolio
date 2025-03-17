@@ -68,7 +68,7 @@ function addPathLinks() {
   const nav_projects = document.getElementById("nav_projects");
   const nav_contact = document.getElementById("nav_contact");
 
-  if (window.location.pathname === "/portfolio/") {
+  if (window.location.pathname === "/portfolio/src/views/projects.html") {
     nav_about.href = "/portfolio/#about";
     nav_skills.href = "/portfolio/#skills";
     nav_projects.href = "/portfolio/#projects";
