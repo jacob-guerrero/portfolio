@@ -61,6 +61,27 @@ const projects = [
   },
 ];
 
+// Manage links
+function addPathLinks() {
+  const nav_about = document.getElementById("nav_about");
+  const nav_skills = document.getElementById("nav_skills");
+  const nav_projects = document.getElementById("nav_projects");
+  const nav_contact = document.getElementById("nav_contact");
+
+  if (window.location.pathname === "/portfolio/") {
+    nav_about.href = "/portfolio/#about";
+    nav_skills.href = "/portfolio/#skills";
+    nav_projects.href = "/portfolio/#projects";
+    nav_contact.href = "/portfolio/#contact";
+  } else {
+    nav_about.href = "/index.html#about";
+    nav_skills.href = "/index.html#skills";
+    nav_projects.href = "/index.html#projects";
+    nav_contact.href = "/index.html#contact";
+  }
+}
+addPathLinks();
+
 function createProjects(arr, parent) {
   arr.forEach((project) => {
     const liContainer = document.createElement("li");
